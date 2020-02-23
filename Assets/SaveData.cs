@@ -6,7 +6,7 @@ using UnityEngine;
 public class SaveData
 {
     //Game States
-
+    private bool isPaused = false;
     public void addGameData()
     {
         
@@ -18,8 +18,8 @@ public class SaveData
 
 
     //Player
-    private int damage_base = 5;
-    private float attack_rate_base = 0.5f;
+    private int damage_base = 0;
+    private float attack_rate_base = 0.0f;
     private int gold = 0;
     public void addPlayerData(Turret player)
     {
