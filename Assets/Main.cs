@@ -162,7 +162,7 @@ public class Main : MonoBehaviour
         //TODO: if any saved data, load it, otherwise start new game
         //TODO: call newGame/gameStart from Scene's Logic; This Main doesn't need to auto start
         ui.pause();
-        onNewGame();
+        //onNewGame(); //only enabled when debugging game without main menu; called from "Play"
         
     }
 
@@ -356,10 +356,10 @@ public class Main : MonoBehaviour
 
 
         if(Input.GetKeyDown(KeyCode.F2)){
-            SceneManager.LoadScene("MainGame", LoadSceneMode.Single);
+            //SceneManager.LoadScene("MainGame", LoadSceneMode.Single);
         }
         if(Input.GetKeyDown(KeyCode.F1)){
-            SceneManager.LoadScene("MainMenu", LoadSceneMode.Single); //or Additive
+            //SceneManager.LoadScene("MainMenu", LoadSceneMode.Single); //or Additive
         }
 
 
@@ -484,6 +484,7 @@ public class Main : MonoBehaviour
         //TODO: Start Wave: Execute timers, bring enemies into scene, set enemies into motion
 
         Debug.Log("Starting New Game");
+        audioPlayMusic("music02");
         this.wave_kills = 0;
         resetPlayer();
         generateWave();

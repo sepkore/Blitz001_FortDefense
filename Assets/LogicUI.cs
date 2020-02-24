@@ -43,6 +43,7 @@ public class LogicUI : MonoBehaviour
         closeGUI_Game();
         closeGUI_Upgrades();
         openGUI_MainMenu();
+        main.audioPlayMusic("music01");
     }
 
 
