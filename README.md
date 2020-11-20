@@ -6,4 +6,4 @@ Hordes of enemies randomly spawn and travel toward your fort in waves to destroy
 
 Source code (.cs files) under /Assets. Primary code is /Assets/Main.cs
 
-Post-mortem and development notes are in /GameDoc_Blitz001_FortDefense_Untitled.odt
+Post-mortem and development notes are in /GameDoc_BlitzGame_001_Untitled.odt
